@@ -34,7 +34,6 @@ This repository contains two primary Google Colab-based workflows utilizing the 
 ---
 
 ## Repository Structure
-
 ```text
 ├── canopy_segmentation.ipynb         # Instance segmentation & surface area workflow
 ├── tree_top_detection.ipynb          # Object detection & bounding box inference workflow
@@ -149,10 +148,3 @@ results = best_model.predict(source='path/to/image.jpg', conf=0.5)
 
 ---
 
-
-
-## Results & Visualizations
-
-* **Training Metrics:** Automatically logged to local run directories (e.g., `/content/runs/segment/` or `/content/runs/detect/`), tracking bounding box/segmentation losses, precision, recall, and mAP50-95 curves.
-
-* **Inference Outputs:** Annotated frames containing overlay masks or bounding boxes with confidence scores are saved automatically and can be visualized inline using OpenCV utilities (`cv2_imshow`).
